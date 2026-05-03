@@ -2,7 +2,7 @@ import mpi.*;
 
 public class MPISum{
     public static void main(String[] args) throws Exception {
-        MPI.init(args);
+        MPI.Init(args);
 
         int rank = MPI.COMM_WORLD.Rank();
 
@@ -33,7 +33,7 @@ public class MPISum{
 
 
 
-
+        
 
         int local_sum = 0;
 
@@ -43,8 +43,7 @@ public class MPISum{
 
         System.out.println("Processor " + rank + " calculated intermediate sum: " + local_sum);
 
-        int loca
-        l_sum_arr[] = new int[1];
+        int local_sum_arr[] = new int[1];
         local_sum_arr[0] = local_sum;
 
         int final_sum[] = new int[1];
