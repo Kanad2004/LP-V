@@ -18,12 +18,13 @@ public class UppercaseClient {
 
             // 4. Take input from the user
             Scanner scanner = new Scanner(System.in);
-           System.out.print("Enter a string to convert to uppercase: ");
+            System.out.print("Enter a string to convert to uppercase: ");
             String str = scanner.nextLine();
 
-            // FIX: Capitalize the 'C' in toUpperCase
+            // 5. Call the remote uppercase method
             String upperStr = uppercaseImpl.toUpperCase(str);
             System.out.println("Uppercase String from Server: " + upperStr);
+
         } catch (Exception e) {
             System.out.println("ERROR : " + e);
         }

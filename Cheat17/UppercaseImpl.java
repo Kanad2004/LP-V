@@ -8,7 +8,7 @@ public class UppercaseImpl extends UppercasePOA {
         orb = orb_val;
     }
 
-    // FIX: Capitalize the 'C' in toUpperCase
+    // The actual method that converts the string
     public String toUpperCase(String str) {
         return str.toUpperCase();
     }
